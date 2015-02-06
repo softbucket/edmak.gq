@@ -1,0 +1,326 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+
+#title
+{
+}
+
+#content
+{
+	float:left;
+	display:block;
+	width:100%;
+}
+
+body
+{
+	min-width:30cm;
+	background-color:#fcfcfc;
+}
+
+a {text-decoration:none;}
+
+*
+{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	color:#333333;
+}
+
+#div_title_container
+{
+	width:100%; height:10cm; background-color:#e1e1e1; display:table;
+}
+
+#div_title_container > *
+{
+	display:table-cell; 
+	vertical-align:middle;
+	
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top left, #FCFCFC 25%, #D9D9D9 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top left, #FCFCFC 25%, #D9D9D9 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top left, #FCFCFC 25%, #D9D9D9 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.25, #FCFCFC), color-stop(1, #D9D9D9));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top left, #FCFCFC 25%, #D9D9D9 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom right, #FCFCFC 25%, #D9D9D9 100%);
+}
+
+#div_title
+{
+	display: table;
+	width:100%; 
+	height:12cm; 
+	border-top: 0.25cm solid #FF981F;
+}
+
+#div_logo_container
+{
+	width:100;
+	white-space: nowrap;
+	display:table-cell; 
+	padding-left:3cm; 
+	vertical-align:middle;
+}
+
+#img_logo
+{
+	position:relative;
+	top:1cm;
+	width:3cm; 
+	height:3cm; 
+}
+
+.iconified 
+{ 
+	background: transparent url(/images/icon.gif) scroll no-repeat left center; 
+	padding: 2px 0px 2px 20px; 
+}
+
+#div_cupcake
+{
+	display:table-cell;
+	vertical-align:middle;
+	padding-left:2cm;
+}
+
+#img_cupcake
+{
+	display:table-cell;
+	vertical-align:middle;
+	width:7cm; 
+	height:7cm; 
+}
+
+#p_logo
+{
+	padding-left: 1cm;
+	display:inline; 
+	font-size:3cm;
+	letter-spacing: 3px;
+}
+
+#p_logo_subheader
+{
+	display:inline;
+	position:relative;
+	margin-top: -1cm;
+	left: 6cm;
+	font-size:1cm;
+	letter-spacing: 2px;
+	border-top: 1px solid #333333;
+}
+
+#div_sociallinks_container
+{
+	float:right;
+	top:0.5cm;
+	right:0.5cm;
+	height:4cm;
+}
+
+#div_sociallinks
+{
+	display:table;
+	right:0cm;
+}
+
+#div_sociallinks *
+{
+	max-width:1cm;
+	display:block; 
+	vertical-align:middle;
+	margin:0.1cm;
+}
+
+#div_navigation_container
+{
+	width:100%; height:2cm; background-color:#FF981F; display:table;
+	text-align:center;
+}
+
+#div_navigation_container a
+{
+	font-size:1cm;
+	text-align:center;
+	width:4.5cm;
+	height:2cm;
+	display:table-cell;
+	vertical-align:middle;
+	text-decoration: none;
+}
+
+#div_navigation_container a:hover
+{
+	background-color:#ff4422;
+}
+
+#nav_home {}
+#nav_about_me {}
+#nav_project {}
+#nav_contact {}
+
+.div_content_container
+{
+	display:flex;
+	width:100%;
+}
+
+.emphasis
+{
+	color:#FF981F;
+}
+
+.div_content
+{
+	width:100%;
+	display:block;
+}
+
+.entry_title
+{
+	font-size:2cm;
+}
+
+.entry
+{
+	display:block;
+	float:left;
+	margin:1cm;
+}
+
+.div_content_container:nth-child(2n)
+{
+	background-color:#e1e1e1; 
+}
+
+.div_content_container:nth-child(2n+1)
+{
+	background-color:#fcfcfc; 
+}
+
+.img_post
+{
+	display:block;
+	max-width:5cm; 
+	margin-top:2cm;
+	margin-left: auto;
+    	margin-right: auto;
+    	
+}
+
+.div_position_single, .div_position_double, .div_position_triple, .div_position_half
+{	
+	float:left;
+	width: 33%;
+	min-height:1px;
+	display: inline;
+	position:relative;
+	
+}
+
+.div_position_double
+{
+	width: 66%;
+}
+
+.div_position_triple
+{
+	width: 99%;
+}
+
+.div_position_half
+{
+	width: 49.5%;
+}
+
+#div_edit
+{
+	display:none;
+	border: 1px solid #333333;
+	position:absolute;
+	background-color:white;
+}
+
+.border
+{
+	border: 1px solid #333333;
+}
+
+#div_password
+{
+	display:block;
+	float:right;
+}
+
+
+#div_create_entry
+{
+	padding: 3cm;
+	float:left;
+	display:block;
+	height:2cm;
+	position:static;
+}
+
+.create_single_div, .create_double_div, .create_triple_div, .create_half_div
+{
+	border: 2px solid #333333;
+	display:inline-flex;
+	height:2cm;
+}
+
+.create_single_div
+{
+	width:2cm;
+}
+
+.create_double_div
+{
+	width:4cm;
+}
+
+.create_triple_div
+{
+	width:6cm;
+}
+
+.create_half_div
+{
+	width:3cm;
+}
+
+.form_remove_content
+{
+	border: 2px solid #333333;
+}
+
+.form_remove_content:hover
+{
+	border: 4px solid #333333;
+}
+
+.form_remove_page, .form_update
+{
+	display:inline;
+	float:left;
+}
+
+#form_create_page
+{
+	float:left;
+	display:inline:
+	height:1cm;
+	font-size:1cm;
+	margin:10px;
+}
